@@ -1,3 +1,3 @@
-a=input()
-b=input()
-print(int(a)+int(b))
+a=int(input())
+for x in range(1, a):
+  print(x*x) 
