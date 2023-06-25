@@ -72,3 +72,5 @@ print(D3.shape)  #Output will be (3, 2, 4) where 3 indicates the dimention of th
 arr = np.arange(10)
 arr = arr.reshape(2,5)
 print(arr)
+
+# This is almost 50 to 60 percent everything about arrays in this module. 

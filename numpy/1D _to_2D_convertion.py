@@ -16,4 +16,3 @@ print(b.shape)
 b = np.expand_dims(b, axis=1)
 print(b.shape)
 print(b)
-
