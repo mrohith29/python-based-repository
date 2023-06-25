@@ -50,3 +50,25 @@ print(np.sort(x))
 a = np.array([[10,2,5], [6,4,8]])
 b = np.array([[9,11,2]])
 print(np.concatenate((a,b), axis=0))
+
+# Let us take a 3-Dimentional array
+D3 = np.array([[[1,2,3,4],
+                [5,6,7,8]],
+
+                [[4,3,2,1],
+                 [9,8,7,6]],
+
+                 [[3,2,1,4],
+                  [8,7,6,9]]])
+# We can print the dimention of the array using .ndim keyword
+print(D3.ndim)
+# We can print the size of the array i.e., the number of elements in the whole array -> i.e., the product of elements in each array to the dimention of the array.
+print(D3.size)
+# We can print the shape of the array too.
+print(D3.shape)  #Output will be (3, 2, 4) where 3 indicates the dimention of the array, 2 indicates number of rows in each dimention, 4 indicates the number of columns int each dimention.
+
+
+# We can reshape the array using reshape keyword in the numpy.
+arr = np.arange(10)
+arr = arr.reshape(2,5)
+print(arr)
