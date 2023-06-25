@@ -31,3 +31,22 @@ print(np.zeros((2,3), dtype=int))
 # like that we can create for ones also ->
 print(np.ones((2,3), dtype=int))
 
+# we can create an array with range of elements using the keyword arange()
+print(np.arange(10))
+
+# we can give an evenly spaced elements also suing the same keyword
+print(np.arange(1,10,2))
+
+# we can desire any number of elements in a given range with equal spacing between them->
+print(np.linspace(1,10,5))
+
+# sort keyword is used to sort the elements in an axis i.e., row wise in an array.
+x = np.array([[3,2,5,1], [7,8,5,10]])
+print(np.sort(x))
+
+# print(np.argsort(x, axis=0))
+
+# we can concatinate two arrays using concatinate keyword in numpy->
+a = np.array([[10,2,5], [6,4,8]])
+b = np.array([[9,11,2]])
+print(np.concatenate((a,b), axis=0))
