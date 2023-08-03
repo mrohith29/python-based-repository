@@ -16,7 +16,9 @@ print(type(b))
 b = list(b)                         
 print(type(b))'''
 
-dict = {'a' : 1, 'b' : 2}
-dict['c'] = 3
-print(dict)
+# dict = {'a' : 1, 'b' : 2}
+# dict['c'] = 3
+# print(dict)
+
+
 
