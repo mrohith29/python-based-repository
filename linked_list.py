@@ -1,3 +1,4 @@
+import sys
 class sll:
     def __init__(self):
         self.data = None
@@ -73,3 +74,7 @@ if __name__ == '__main__':
             delete(position)
         elif choice == 3:
             display()
+        elif choice == 4:
+            sys.exit()
+        else:
+            print('enter a correct option')
