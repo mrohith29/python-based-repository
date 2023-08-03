@@ -30,14 +30,24 @@ def insert(pos):
         ptr.next = newnode
     count += 1
 
+def delete(pos):
+    global head, count
+    temp = head
+    ptr = None
 
-# def nodecount():
-#     global head, count
-#     temp = head
-#     while temp is not None:
-#         temp = temp.next
-#         count += 1
-#     print("no of nodes in s")
+    if count < pos or pos < 1:
+        print(pos,'does not exist - please enter a valid position to delete')
+        return
+    if pos == 1:
+        print('Deleted element from sll is',head.data)
+        head = head.next
+    else:
+        for i in range(1,pos):
+            ptr = temp
+            temp = temp.next
+        print('Deleted element from sll is',temp.data)
+        ptr.next = temp.next
+    count -= 1
 
 if __name__ == '__main__':
     while True:
@@ -45,3 +55,6 @@ if __name__ == '__main__':
         if choice == 1:
             position = int(input())
             insert(position)
+        elif choice == 2:
+            position = int(input())
+            delete(position)
