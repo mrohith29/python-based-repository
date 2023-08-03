@@ -30,24 +30,37 @@ def insert(pos):
         ptr.next = newnode
     count += 1
 
+
 def delete(pos):
     global head, count
     temp = head
     ptr = None
 
     if count < pos or pos < 1:
-        print(pos,'does not exist - please enter a valid position to delete')
+        print(pos, 'does not exist - please enter a valid position to delete')
         return
     if pos == 1:
-        print('Deleted element from sll is',head.data)
+        print('Deleted element from sll is', head.data)
         head = head.next
     else:
-        for i in range(1,pos):
+        for i in range(1, pos):
             ptr = temp
             temp = temp.next
-        print('Deleted element from sll is',temp.data)
+        print('Deleted element from sll is', temp.data)
         ptr.next = temp.next
     count -= 1
+
+
+def display():
+    global head, count
+    temp = head
+    if head is None:
+        print('Empty sll - cannot display')
+    else:
+        while temp is not None:
+            print(temp.data, end='->')
+            temp = temp.next
+
 
 if __name__ == '__main__':
     while True:
@@ -58,3 +71,5 @@ if __name__ == '__main__':
         elif choice == 2:
             position = int(input())
             delete(position)
+        elif choice == 3:
+            display()
