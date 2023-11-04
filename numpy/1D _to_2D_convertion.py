@@ -1,7 +1,6 @@
 # First import the numpy module as np.
 import numpy as np
 
-
 a = np.arange(10)
 print(a.shape)
 
